@@ -157,3 +157,14 @@ p {
     background-color: #de5558;
     border-color: #de5558;
 }
+
+/* ! Footer */
+.footer {
+    border-bottom: .7rem solid var(--primary);
+}
+
+.copyright {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
