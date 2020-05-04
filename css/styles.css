@@ -1,0 +1,82 @@
+:root {
+    --primary: #f46669;
+    --secondary: #c7c57d;
+    --gray: #f5f5f5;
+    --dark-gray: #303030;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #303030;
+}
+
+p {
+    font-weight: 100;
+    line-height: 3.4rem;
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    color: black;
+    text-transform: uppercase;
+}
+
+.image>div {
+    height: 30rem;
+}
+
+@media (min-width: 768px) {
+    .image>div {
+        height: 45rem;
+    }
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+.top .content {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.top .content p {
+    line-height: 2rem;
+}
+
+.bottom .content {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.bottom .content p,
+.bottom .content h2 {
+    color: black;
+    line-height: 2rem;
+}
+
+.bg-wine {
+    background-image: url(../img/main1.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.bg-food {
+    background-image: url(../img/main2.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.bottom .bg-food {
+    order: 1;
+}
+
+@media (min-width: 768px) {
+    .bottom .bg-food {
+        order: unset;
+    }
+}
